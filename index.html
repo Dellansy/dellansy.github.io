@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interactive 3D Wedding Flyer</title>
+    <title>Hochzeitseinladung</title>
     <style>
       @import url("https://fonts.googleapis.com/css?family=Indie+Flower");
       @import url("https://fonts.googleapis.com/css?family=Amatic+SC");
@@ -278,6 +278,18 @@
       </div>
     </div>
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let touchArea = document.getElementById("card");
+
+        touchArea.addEventListener(
+          "touchend",
+          function (event) {
+            openCard();
+          },
+          false
+        );
+      });
+
       function openCard() {
         let card = document.getElementById("card");
         let whiteBg = document.getElementById("white-bg");
