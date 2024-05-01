@@ -216,7 +216,7 @@
   </head>
   <body>
     <div id="card" class="card border-radius">
-      <div class="imgBox" onclick="openCard()" style="cursor: pointer">
+      <div id="imgBox" class="imgBox" onclick="openCard()" style="cursor: pointer">
         <div class="bark"></div>
         <img class="bg border-radius" src="images/bg1.jpg " alt="" />
         <div id="white-bg">
@@ -292,7 +292,7 @@
     </div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        let touchArea = document.getElementById("card");
+        let touchArea = document.getElementById("imgBox");
 
         touchArea.addEventListener(
           "touchmove",
