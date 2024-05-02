@@ -13,9 +13,22 @@
         margin: 0px;
         padding: 0px;
       }
+
       ::selection {
         background: transparent;
       }
+
+      a {
+        font-family: "Indie Flower", cursive !important;
+        color: #013243;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      a:hover {
+        color: #000;
+      }
+
       h1 {
         color: #000;
         position: absolute;
@@ -216,7 +229,12 @@
   </head>
   <body>
     <div id="card" class="card border-radius">
-      <div id="imgBox" class="imgBox" onclick="openCard()" style="cursor: pointer">
+      <div
+        id="imgBox"
+        class="imgBox"
+        onclick="openCard()"
+        style="cursor: pointer"
+      >
         <div class="bark"></div>
         <img class="bg border-radius" src="images/bg1.jpg " alt="" />
         <div id="white-bg">
@@ -251,7 +269,7 @@
                   <div class="raw">
                     <span>
                       Beginn<br />
-                      10:30 Uhr
+                      09:30 Uhr
                     </span>
                   </div>
                 </div>
@@ -278,7 +296,12 @@
                 <span>
                   Ort<br />
                   Schloss Neuenbürg (75305)<br />
-                  Aufgang Fürstensaal
+                  <a
+                    href="https://dellansy.github.io/images/Schloss_Neuenbuerg_Grundriss.jpg"
+                    target="_blank"
+                  >
+                    Aufgang Fürstensaal
+                  </a>
                 </span>
               </div>
             </div>
